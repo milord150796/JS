@@ -6,37 +6,6 @@
     <title>javascript</title>
 </head>
 <body>
-    <script>// Запускаємо цикл, поки користувач не натисне "Cancel" у вікні підтвердження
-        while (confirm("Натисніть OK для введення чисел X і Y, або Cancel для завершення роботи програми.")) {
-            // Запитуємо користувача про число X
-            var X = parseFloat(prompt("Введіть число X:"));
-            
-            // Запитуємо користувача про число Y
-            var Y = parseInt(prompt("Введіть число Y (діапазон 0-4):"));
-            
-            // Виконуємо обчислення та виведення результату з використанням switch
-            switch (Y) {
-                case 0:
-                    console.log(X + " в степені " + Y + " дорівнює 1");
-                    break;
-                case 1:
-                    console.log(X + " в степені " + Y + " дорівнює " + X);
-                    break;
-                case 2:
-                    console.log(X + " в степені " + Y + " дорівнює " + Math.pow(X, 2));
-                    break;
-                case 3:
-                    console.log(X + " в степені " + Y + " дорівнює " + Math.pow(X, 3));
-                    break;
-                case 4:
-                    console.log(X + " в степені " + Y + " дорівнює " + Math.pow(X, 4));
-                    break;
-                default:
-                    console.log("Некоректне значення Y. Введіть число в діапазоні від 0 до 4.");
-            }
-        }
-        
-        console.log("Робота програми завершена.");
-        </script>
+    <script src="./javascript.js"></script>
 </body>
 </html>
