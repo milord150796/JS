@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #conteiner{
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
+    <div id="conteiner"></div>
+    <script>
+        let box = document.getElementById("conteiner");
+        function BoxCSS(color) {
+            this.style.backgroundColor = color;
+        }
+        BoxCSS.call(box, "blue");
+        function BoxWidth(namber, color) {
+            this.style[namber] = color;
+        }
+        BoxWidth.call(box, "width","100px");
+        BoxWidth.call(box, "height","100px");       
+    </script>
     <script src="./javascript.js"></script>
 </body>
 </html>
